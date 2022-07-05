@@ -1,4 +1,4 @@
-let text = "Moi University Fee Structure 2022";
+let text = "Amos is a resilient programmer";
 let speech = new SpeechSynthesisUtterance();
 
 const textToSpeech = () => {
