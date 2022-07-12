@@ -3,6 +3,8 @@
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
+## View the Dashboard on
+<a href="4ouR04.github.io/TheJitu/time-tracking-dashboard/">Time Tracking Dashboard</a>
 
 ## The challenge
 
