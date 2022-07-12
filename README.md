@@ -6,10 +6,12 @@
 This repository was created during  <b>TheJitu</b> 3 month training.
 
 __LINKS__
-1. <a href="https://4ouR04/TheJitu/qr-code-component-main/">View qr component</a>
-2. <a href="https://4ouR04/TheJitu/ecommerce-product-page-main">View Ecommerce Product Page</a>
+1. <a href="https://4ouR04.github.io/TheJitu/qr-code-component-main/">View qr Code Component</a>
+2. <a href="https://4ouR04.github.io/TheJitu/ecommerce-product-page-main">View Ecommerce Product Page</a>
 
 ## Acknowledgements :pray:
 
-Click this image for more information
+Click this image for more information:
+
+
 <a href = "https://thejitu.com/" target="_blank"><img src="img/thejitu.webp" style = "width: 100%"></img></a>
