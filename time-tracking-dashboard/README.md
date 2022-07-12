@@ -4,7 +4,7 @@
 
 ## Welcome! 👋
 ## View the Dashboard on
-<a href="4ouR04.github.io/TheJitu/time-tracking-dashboard/">Time Tracking Dashboard</a>
+<a href="https://4ouR04.github.io/TheJitu/time-tracking-dashboard/">Time Tracking Dashboard</a>
 
 ## The challenge
 
