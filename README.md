@@ -5,6 +5,12 @@
 
 This repository was created during  <b>TheJitu</b> 3 month training.
 
+__LINKS__
+1. View qr component on
+![qr-code-component-main](https://4ouR04/TheJitu/qr-code-component-main/)
+2. View ecommerce product page on
+![ecommerce-product-page-main](https://4ouR04/TheJitu/ecommerce-product-page-main/)
+![]()
 ## Acknowledgements :pray:
 
 Click this image for more information
