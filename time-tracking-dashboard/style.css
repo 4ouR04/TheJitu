@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+:root {
+  /* Primary */
+  /* Blue: hsl(246, 80%, 60%) */
+  --Blue: hsl(246, 80%, 60%);
+  /* Light red (work): hsl(15, 100%, 70%) */
+  --Light-red-work: hsl(15, 100%, 70%);
+  /* Soft blue (play): hsl(195, 74%, 62%) */
+  --Soft-blue: hsl(195, 74%, 62%);
+  /* Light red (study): hsl(348, 100%, 68%) */
+  --Light-red-study: hsl(348, 100%, 68%);
+  /* Lime green (exercise): hsl(145, 58%, 55%) */
+  --Lime-green: hsl(145, 58%, 55%);
+  /* Violet (social): hsl(264, 64%, 52%) */
+  --Violet: hsl(264, 64%, 52%);
+  /* Soft orange (self care): hsl(43, 84%, 65%) */
+  --Soft-orange: hsl(43, 84%, 65%);
+
+  /* Neutral */
+  /* Very dark blue: hsl(226, 43%, 10%) */
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  /* Dark blue: hsl(235, 46%, 20%) */
+  --Dark-blue: hsl(235, 46%, 20%);
+  /* Desaturated blue: hsl(235, 45%, 61%) */
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  /* Pale Blue: hsl(236, 100%, 87%) */
+  --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Very-dark-blue);
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+/* Grid container */
+.container {
+  display: grid;
+  grid-template-areas:
+    "jeremy work play study"
+    "jeremy exercise social selfcare";
+  gap: 20px;
+  width: auto;
+  height: auto;
+}
+/* Grid items */
+/* First item */
+.jeremy-card {
+  grid-area: jeremy;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--Dark-blue);
+}
+.jeremy-upper-card {
+  background-color: var(--Blue);
+  border-radius: 10px;
+  padding: 1rem 1rem 0;
+  width: 12rem;
+  height: 70%;
+}
+.jeremy-upper-card .image-card {
+  background-color: white;
+  height: 4.3rem;
+  width: 4.3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jeremy-upper-card .image-card img {
+  height: 4rem;
+  width: 4rem;
+}
+.jeremy-upper-card p {
+  padding-top: 2rem;
+  opacity: 0.5;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.jeremy-upper-card h3 {
+  padding-top: 0.6rem;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.jeremy-lower-card {
+  height: 30%;
+}
+.jeremy-lower-card h4 {
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 1rem;
+}
+/* End styling jeremy-card */
+
+/* Styling card */
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.card .card-image {
+  height: 14%;
+  border-top: 10px;
+  overflow: hidden;
+  padding: 0 0.8rem;
+}
+.card .card-image img {
+  float: right;
+  height: 3rem;
+  width: 3rem;
+}
+
+.card .card-info {
+  padding: 1.5rem 1.5rem 0;
+  margin: 0 -0.1rem;
+  height: 86%;
+  border-radius: 10px;
+  background-color: var(--Dark-blue);
+}
+.card .card-info span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+.card .card-info span h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.card .card-info span img {
+  height: 3px;
+  width: 15px;
+}
+.card .card-info h3 {
+  padding: 0.6rem 0;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.card .card-info p {
+  opacity: 0.5;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+/* End styling card */
+/* Grid items */
+.work {
+  grid-area: work;
+  background-image: linear-gradient(
+    var(--Light-red-work) 60%,
+    var(--Dark-blue) 40%
+  );
+}
+.play {
+  grid-area: play;
+  background-image: linear-gradient(var(--Soft-blue) 60%, var(--Dark-blue) 40%);
+}
+.study {
+  grid-area: study;
+  background-image: linear-gradient(
+    var(--Light-red-study) 60%,
+    var(--Dark-blue) 40%
+  );
+}
+.exercise {
+  grid-area: exercise;
+  background-image: linear-gradient(
+    var(--Lime-green) 60%,
+    var(--Dark-blue) 40%
+  );
+}
+.social {
+  grid-area: social;
+  background-image: linear-gradient(var(--Violet) 60%, var(--Dark-blue) 40%);
+}
+.selfcare {
+  grid-area: selfcare;
+  background-image: linear-gradient(
+    var(--Soft-orange) 60%,
+    var(--Dark-blue) 40%
+  );
+}
+
+/* Responsive design */
+@media screen and (max-width: 500px) {
+  body {
+    width: 100vw;
+  }
+  /* Grid container */
+ .container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 4rem auto;
+  }
+  .jeremy-upper-card {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0 1.5rem;
+  }
+  .jeremy-upper-card div:last-child {
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 1.5rem;
+  }
+  .jeremy-upper-card div:last-child h3 {
+    font-size: 16px;
+  }
+  .jeremy-lower-card {
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* Styling card */
+  .card .card-info div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+} 
