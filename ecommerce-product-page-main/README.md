@@ -3,7 +3,7 @@
 ![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)
 
 ##  Link to view the code
-<a href="4ouR04.github.io/ecommerce-product-page-main">View On The Website</a>
+<a href="https://4ouR04.github.io/TheJitu/ecommerce-product-page-main">View On The Website</a>
 
 ## Welcome! 👋
 ## The challenge
