@@ -8,7 +8,7 @@ This repository was created during  <b>TheJitu</b> 3 month training.
 ## LINKS
 1. <a href="https://4ouR04.github.io/TheJitu/qr-code-component-main/">View qr Code Component</a>
 2. <a href="https://4ouR04.github.io/TheJitu/ecommerce-product-page-main">View Ecommerce Product Page</a>
-
+3> <a href="https://4our04.github.io/TheJitu/time-tracking-dashboard/">View Timetracking Dashboard</a>
 ## Acknowledgements :pray:
 
 __Click this image for more information:__
