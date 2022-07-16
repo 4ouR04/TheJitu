@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: linear-gradient(to bottom right, pink, blue, darkblue);
+  /* background-color: whitesmoke; */
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+}
+/* .container {
+  background-color: whitesmoke;
+  border: 1px solid black;
+  width: 400px;
+  display: block;
+  align-items: center;
+} */
+.intro {
+  margin: 0px 30px;
+  font-weight: bold;
+}
+
+h1 {
+  color: hwb(0 100% 0%);
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+p {
+  font-weight: 600;
+}
+
+#first {
+  margin-top: 10px;
+  color: black;
+}
+
+#second {
+  color: black;
+}
+
+#third {
+  color: #025f70;
+  margin-bottom: 30px;
+}
+
+#enter {
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #04a1bf;
+  background-color: #025f70;
+  transition: all 0.75s ease;
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75 ease;
+  font-weight: normal;
+}
+
+#enter:hover {
+  background-color: black;
+  color: #ffcd5d;
+}
+
+ul {
+  align-items: center;
+  margin-left: 33%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+li {
+  height: 20px;
+  width: 400px;
+  /* align-items: center; */
+  list-style: none;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 600;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: green;
+  transition: all 0.75s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5 ease;
+}
+
+li:hover {
+  background: black;
+  color: white;
+}
+
+li > button {
+  font-weight: normal;
+  background: none;
+  border: none;
+  float: right;
+  color: black;
+  font-weight: 800;
+}
+
+input {
+  border-radius: 5px;
+  min-width: 35%;
+  min-height: 25px;
+  padding: 5px;
+  border: none;
+}
+
+.done {
+  background: pink !important;
+  /* color: black */
+  text-decoration: line-through;
+}
+
+.delete {
+  display: none;
+}
