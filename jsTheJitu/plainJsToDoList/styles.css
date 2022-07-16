@@ -46,6 +46,7 @@ p {
 }
 
 #enter {
+  height: 35px;
   border: none;
   padding: 5px 15px;
   border-radius: 5px;
@@ -66,14 +67,14 @@ p {
 
 ul {
   align-items: center;
-  margin-left: 33%;
+  margin-left: 30.5%;
   text-align: left;
   margin-top: 20px;
 }
 
 li {
   height: 20px;
-  width: 400px;
+  width: 444px;
   /* align-items: center; */
   list-style: none;
   padding: 10px 20px;
