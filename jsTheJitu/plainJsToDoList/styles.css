@@ -5,6 +5,7 @@
 body {
   background-image: linear-gradient(to bottom right, pink, blue, darkblue);
   /* background-color: whitesmoke; */
+  justify-content: center;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   height: 100vh;
@@ -22,6 +23,8 @@ body {
 }
 
 h1 {
+  margin-top: 20px;
+  margin-bottom: 30px;
   color: hwb(0 100% 0%);
   text-transform: uppercase;
   font-weight: 800;
@@ -46,7 +49,7 @@ p {
 }
 
 #enter {
-  height: 35px;
+  height: 40px;
   border: none;
   padding: 5px 15px;
   border-radius: 5px;
@@ -66,16 +69,13 @@ p {
 }
 
 ul {
-  align-items: center;
-  margin-left: 30.5%;
   text-align: left;
   margin-top: 20px;
 }
 
 li {
-  height: 20px;
+  min-height: 20px;
   width: 444px;
-  /* align-items: center; */
   list-style: none;
   padding: 10px 20px;
   color: #ffffff;
@@ -83,8 +83,9 @@ li {
   font-weight: 600;
   border: 2px solid black;
   border-radius: 5px;
+  margin-top: 20px;
   margin-bottom: 10px;
-  background: green;
+  background-image: linear-gradient(to bottom right, pink, blue);
   transition: all 0.75s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -108,8 +109,8 @@ li > button {
 
 input {
   border-radius: 5px;
-  min-width: 35%;
-  min-height: 25px;
+  width: 435px;
+  height: 30px;
   padding: 5px;
   border: none;
 }
@@ -122,4 +123,35 @@ input {
 
 .delete {
   display: none;
+}
+.row {
+  justify-content: center;
+  display: grid;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    display: block;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  h1 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: inline;
+    font-weight: 100px;
+  }
+  .col-12 {
+    display: inline;
+  }
+  input {
+    width: 81%;
+  }
+  li {
+    width: 85%;
+  }
+  .row {
+    display: block;
+    margin: 0px 30px;
+  }
 }
