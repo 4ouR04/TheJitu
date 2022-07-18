@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css" />
+  </head>
+  <body>
+    <div class="section1">
+      <h1>4ouR04's ToDo List</h1>
+    </div>
+    <div class="section1">
+      <input
+        id="title"
+        class="userInput"
+        type="text"
+        placeholder="Enter title..."
+      />
+      <input
+        id="description"
+        class="userInput"
+        type="text"
+        placeholder="Enter description..."
+      />
+      <input id="date" class="userInput" type="date" />
+      <button class="userInput" id="addBtn"><i class="fas fa-plus"></i></button>
+      <br />
+      <ul class="list1"></ul>
+      <ul class="list2">
+        <li>
+          <strong>Title:</strong> Code <br />
+          <strong>Description:</strong> <br />
+          <strong>Completion Date:</strong> On progress
+          <button class="del" onclick="delListItem()">X</button>
+        </li>
+        <li>
+          <strong>Title:</strong> Finish assignment <br />
+          <strong>Description:</strong> <br />
+          <strong>Completion Date:</strong> On progress
+          <button class="del">X</button>
+        </li>
+      </ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
