@@ -5,7 +5,8 @@
 }
 body {
   background-image: linear-gradient(#2d557d, #9610fb);
-  height: 100vh;
+  background-size: cover;
+  /* height: 100vh; */
   /* align-items: center; */
   /* justify-content: center; */
 }
@@ -23,6 +24,7 @@ body {
   border-radius: 5px;
   background-color: #fff;
 }
+
 .list1 {
   display: grid;
   gap: 10px;
@@ -58,7 +60,16 @@ li > button {
   border: 1px solid black;
   border-radius: 5px;
 }
+.rInput {
+  /* height:  */
+  padding: 5px;
+  font-size: 20px;
+  text-align: left;
+  border-radius: 5px;
+  background-color: #fff;
+}
 #addBtn {
+  width: 298px !important;
   justify-content: center;
   align-content: center;
   background-color: #025f70;
@@ -73,6 +84,7 @@ li > button {
   background-color: black;
   color: #ffcd5d;
 }
+
 .delete {
   display: none;
 }
@@ -80,6 +92,11 @@ li > button {
   background: pink !important;
   /* color: black */
   text-decoration: line-through;
+}
+.button_flex {
+  display: flex !important;
+  align-items: center !important;
+  /* justify-content: center !important; */
 }
 @media only screen and (max-width: 600px) {
   .section1 > h1 {
@@ -97,6 +114,14 @@ li > button {
     width: 90%;
   }
   .list2 li {
-    width: 1 00%;
+    width: 90%;
+  }
+  #addBtn {
+    width: 110px !important;
+  }
+  .rInput {
+    /* width: 10px !important; */
+    height: 35px;
+    padding: 1px;
   }
 }
