@@ -61,7 +61,42 @@ li > button {
 #addBtn {
   justify-content: center;
   align-content: center;
+  background-color: #025f70;
+  transition: all 0.75s ease;
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75 ease;
+  font-weight: normal;
+}
+#addBtn:hover {
+  background-color: black;
+  color: #ffcd5d;
 }
 .delete {
   display: none;
+}
+.done {
+  background: pink !important;
+  /* color: black */
+  text-decoration: line-through;
+}
+@media only screen and (max-width: 600px) {
+  .section1 > h1 {
+    width: 100;
+    font-size: 25px;
+    /* font-size: large; */
+  }
+  body {
+    width: 100vw;
+  }
+  .userInput {
+    width: 90%;
+  }
+  .list1 li {
+    width: 90%;
+  }
+  .list2 li {
+    width: 1 00%;
+  }
 }
