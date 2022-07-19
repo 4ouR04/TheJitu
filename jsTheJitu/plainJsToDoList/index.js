@@ -24,7 +24,9 @@ addBtn.addEventListener("click", () => {
     Date.value = "";
 
     const dBtn = document.createElement("button");
-    dBtn.appendChild(document.createTextNode("X"));
+
+    dBtn.innerHTML = `<i class="fas fa-trash-alt"></i>`;
+
     li.appendChild(dBtn);
     dBtn.addEventListener("click", deleteListItem);
 
@@ -39,7 +41,7 @@ addBtn.addEventListener("click", () => {
     //   li2.classList.add("done");
     // }
 
-    li.addEventListener("click", crossOut);
+    li.addEventListener("dblclick", crossOut);
   }
 });
 // let completed = document.querySelector(".completed");
@@ -55,25 +57,25 @@ list2.innerHTML = `
           <strong>Title:</strong> Code <br />
           <strong>Description:</strong> <br />
           <strong>Completion Date:</strong> Expired!
-          <button>X</button>
+          <button><i class="fas fa-trash-alt"></i></button>
         </li>
         <li>
           <strong>Title:</strong> Finish assignment <br />
           <strong>Description:</strong> <br />
           <strong>Completion Date:</strong> Expired!
-          <button>X</button>
+          <button><i class="fas fa-trash-alt"></i></button>
         </li>
         <li>
           <strong>Title:</strong> Code the insurance <br />
           <strong>Description:</strong> Front end based assignment<br />
           <strong>Completion Date:</strong> On progress!
-          <button>X</button>
+          <button><i class="fas fa-trash-alt"></i></button>
         </li>`;
-
+console.log(Date.value);
 function crossOut() {
   li.classList.add("done");
 }
-let li = document.querySelector("li");
-list2.addEventListener("click", crossOut);
-console.log(li);
-//============================================================================================================================
+// let li = document.querySelector("li");
+// list2.addEventListener("click", crossOut);
+// console.log(li);
+// //============================================================================================================================
