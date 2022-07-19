@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="section1">
+      <h1>4ouR04's ToDo List</h1>
+    </div>
+    <div class="section1">
+      <input
+        id="title"
+        class="userInput"
+        type="text"
+        placeholder="Enter title..."
+      />
+      <input
+        id="description"
+        class="userInput"
+        type="text"
+        placeholder="Enter description..."
+      />
+      <input id="date" class="userInput" type="date" />
+      <div class="button_flex">
+        <div class="plus_flex">
+          <button type="submit" class="userInput" id="addBtn">
+            <i class="fas fa-plus"> </i>
+          </button>
+        </div>
+        <div class="all">
+          <select class="rInput" name="" id="">
+            <option value="">All</option>
+            <option value="">Completed</option>
+            <option value="">Uncompleted</option>
+          </select>
+        </div>
+      </div>
+
+      <br />
+
+      <ul class="list1"></ul>
+      <ul class="list2"></ul>
+      <br />
+      <br />
+      <p><strong>Click</strong> on the task to edit.</p>
+      <p><strong>Double click</strong> on the task to Mark Complete.</p>
+      <p>Click <strong>X</strong> to delete task.</p>
+      <br />
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

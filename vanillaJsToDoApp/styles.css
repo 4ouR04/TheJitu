@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(#2d557d, #9610fb);
+  background-size: cover;
+  /* height: 100vh; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.section1 {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  gap: 10px;
+}
+.userInput {
+  width: 445px;
+  padding: 5px;
+  font-size: 20px;
+  text-align: left;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.list1 {
+  display: grid;
+  gap: 10px;
+}
+.list1 li {
+  background-image: linear-gradient(to bottom right, pink, blue);
+  color: black;
+  list-style: none;
+  /* height: 40px; */
+  width: 445px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+li > button {
+  font-weight: normal;
+  background: none;
+  border: none;
+  float: right;
+  color: black;
+  font-weight: 800px;
+  font-size: 20px;
+  position: relative;
+  transform: translateY(-70%);
+}
+.list2 {
+  display: grid;
+  gap: 10px;
+}
+.list2 li {
+  background-image: linear-gradient(to bottom left, pink, blue);
+  color: black;
+
+  list-style: none;
+  /* height: 40px; */
+  width: 445px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.rInput {
+  /* height:  */
+  padding: 5px;
+  font-size: 20px;
+  text-align: left;
+  border-radius: 5px;
+  background-color: #fff;
+}
+#addBtn {
+  width: 298px !important;
+  justify-content: center;
+  align-content: center;
+  background-color: #025f70;
+  transition: all 0.75s ease;
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75 ease;
+  font-weight: normal;
+}
+#addBtn:hover {
+  background-color: black;
+  color: #ffcd5d;
+}
+
+.delete {
+  display: none;
+}
+.done {
+  background: pink !important;
+  /* color: black */
+  text-decoration: line-through;
+}
+.button_flex {
+  display: flex !important;
+  align-items: center !important;
+  /* justify-content: center !important; */
+}
+@media only screen and (max-width: 600px) {
+  .section1 > h1 {
+    width: 100;
+    font-size: 25px;
+    /* font-size: large; */
+  }
+  body {
+    width: 100vw;
+  }
+  .userInput {
+    width: 90%;
+  }
+  .list1 li {
+    width: 90%;
+  }
+  .list2 li {
+    width: 90%;
+  }
+  #addBtn {
+    width: 110px !important;
+  }
+  .rInput {
+    /* width: 10px !important; */
+    height: 35px;
+    padding: 1px;
+  }
+}
