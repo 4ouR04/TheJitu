@@ -29,12 +29,11 @@
         class="userInput"
         type="text"
         placeholder="Enter description..."
-        required
       />
-      <input id="date" class="userInput" type="date" required />
+      <input id="date" class="userInput" type="date" />
       <div class="button_flex">
         <div class="plus_flex">
-          <button class="userInput" id="addBtn">
+          <button type="submit" class="userInput" id="addBtn">
             <i class="fas fa-plus"> </i>
           </button>
         </div>
@@ -50,20 +49,7 @@
       <br />
 
       <ul class="list1"></ul>
-      <ul class="list2">
-        <li>
-          <strong>Title:</strong> Code <br />
-          <strong>Description:</strong> <br />
-          <strong>Completion Date:</strong> Expired!
-          <button class="del" onclick="delListItem()">X</button>
-        </li>
-        <li>
-          <strong>Title:</strong> Finish assignment <br />
-          <strong>Description:</strong> <br />
-          <strong>Completion Date:</strong> Expired!
-          <button class="del">X</button>
-        </li>
-      </ul>
+      <ul class="list2"></ul>
       <br />
       <p>Click on the task to Mark Complete</p>
       <p>Click on the <strong>X</strong> to delete task</p>
