@@ -1,59 +1,80 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(to bottom right, pink, blue, darkblue);
-  /* background-color: whitesmoke; */
+  background-image: linear-gradient(#2d557d, #9610fb);
+  background-size: cover;
+  /* height: 100vh; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.section1 {
+  display: grid;
+  grid-template-columns: auto;
   justify-content: center;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  height: 100vh;
+  gap: 10px;
 }
-/* .container {
-  background-color: whitesmoke;
-  border: 1px solid black;
-  width: 400px;
-  display: block;
-  align-items: center;
-} */
-.intro {
-  margin: 0px 30px;
-  font-weight: bold;
-}
-
-h1 {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  color: hwb(0 100% 0%);
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-p {
-  font-weight: 600;
-}
-
-#first {
-  margin-top: 10px;
-  color: black;
-}
-
-#second {
-  color: black;
-}
-
-#third {
-  color: #025f70;
-  margin-bottom: 30px;
-}
-
-#enter {
-  height: 40px;
-  border: none;
-  padding: 5px 15px;
+.userInput {
+  width: 445px;
+  padding: 5px;
+  font-size: 20px;
+  text-align: left;
   border-radius: 5px;
-  color: #04a1bf;
+  background-color: #fff;
+}
+
+.list1 {
+  display: grid;
+  gap: 10px;
+}
+.list1 li {
+  background-image: linear-gradient(to bottom right, pink, blue);
+  color: black;
+  list-style: none;
+  /* height: 40px; */
+  width: 445px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+li > button {
+  font-weight: normal;
+  background: none;
+  border: none;
+  float: right;
+  color: black;
+  font-weight: 800px;
+  font-size: 20px;
+  position: relative;
+  transform: translateY(-70%);
+}
+.list2 {
+  display: grid;
+  gap: 10px;
+}
+.list2 li {
+  background-image: linear-gradient(to bottom left, pink, blue);
+  color: black;
+
+  list-style: none;
+  /* height: 40px; */
+  width: 445px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.rInput {
+  /* height:  */
+  padding: 5px;
+  font-size: 20px;
+  text-align: left;
+  border-radius: 5px;
+  background-color: #fff;
+}
+#addBtn {
+  width: 298px !important;
+  justify-content: center;
+  align-content: center;
   background-color: #025f70;
   transition: all 0.75s ease;
   -webkit-transition: all 0.75s ease;
@@ -62,96 +83,48 @@ p {
   -o-transition: all 0.75 ease;
   font-weight: normal;
 }
-
-#enter:hover {
+#addBtn:hover {
   background-color: black;
   color: #ffcd5d;
-}
-
-ul {
-  text-align: left;
-  margin-top: 20px;
-}
-
-li {
-  min-height: 20px;
-  width: 444px;
-  list-style: none;
-  padding: 10px 20px;
-  color: #ffffff;
-  text-transform: capitalize;
-  font-weight: 600;
-  border: 2px solid black;
-  border-radius: 5px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  background-image: linear-gradient(to bottom right, pink, blue);
-  transition: all 0.75s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5 ease;
-}
-
-li:hover {
-  background: black;
-  color: white;
-}
-
-li > button {
-  font-weight: normal;
-  background: none;
-  border: none;
-  float: right;
-  color: black;
-  font-weight: 800;
-}
-
-input {
-  border-radius: 5px;
-  width: 435px;
-  height: 30px;
-  padding: 5px;
-  border: none;
-}
-
-.done {
-  background: pink !important;
-  /* color: black */
-  text-decoration: line-through;
 }
 
 .delete {
   display: none;
 }
-.row {
-  justify-content: center;
-  display: grid;
+.done {
+  background: pink !important;
+  /* color: black */
+  text-decoration: line-through;
+}
+.button_flex {
+  display: flex !important;
+  align-items: center !important;
+  /* justify-content: center !important; */
 }
 @media only screen and (max-width: 600px) {
+  .section1 > h1 {
+    width: 100;
+    font-size: 25px;
+    /* font-size: large; */
+  }
   body {
-    display: block;
-    justify-content: center;
     width: 100vw;
-    height: 100vh;
   }
-  h1 {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    display: inline;
-    font-weight: 100px;
+  .userInput {
+    width: 90%;
   }
-  .col-12 {
-    display: inline;
+  .list1 li {
+    width: 90%;
   }
-  input {
-    width: 81%;
+  .list2 li {
+    width: 90%;
   }
-  li {
-    width: 85%;
+  #addBtn {
+    width: 110px !important;
   }
-  .row {
-    display: block;
-    margin: 0px 30px;
+  .rInput {
+    /* width: 10px !important; */
+    height: 35px;
+    padding: 1px;
   }
 }
