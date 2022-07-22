@@ -1,0 +1,665 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
+:root {
+  --light-gray: #252b42;
+  --light-blue: #23a6f0;
+  --dark-blue: rgb(7, 7, 87);
+  --purple: #b00cf4;
+  --white: #fbfcfb;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* opacity: 0.8; */
+  background-blend-mode: darken;
+  height: 98vh;
+}
+header {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  color: var(--white);
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+/* Style logo */
+.navbar .logo {
+  flex: 1;
+}
+.navbar .logo h3 {
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+/* Style navbar items */
+.navbar .nav-items {
+  flex: 3;
+}
+.nav-items ul {
+  display: flex;
+  margin-left: 2rem;
+}
+.nav-items ul li {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 1.2rem;
+}
+.nav-items ul li a {
+  text-decoration: none;
+  color: white;
+}
+/* Styling login */
+.navbar .account {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .account p {
+  margin-right: 2rem;
+  font-weight: 500;
+}
+.account .become-member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  background-color: var(--light-blue);
+  color: var(--white);
+}
+.account .become-member p {
+  margin-right: 0.7rem;
+}
+/* Styling Hero text */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 73vh;
+}
+.hero-section .hero-text {
+  height: auto;
+  width: 30rem;
+  text-align: center;
+}
+.hero-section .hero-text h1 {
+  font-size: 3rem;
+  color: var(--white);
+  line-height: 4.5rem;
+  margin-bottom: 2rem;
+}
+.hero-section .hero-text p {
+  color: var(--white);
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+}
+.hero-section .hero-text .hero-links {
+  display: flex;
+  justify-content: center;
+}
+.hero-section .hero-text .hero-links a {
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+}
+.hero-section .hero-text .hero-links a:first-child {
+  background-color: var(--light-blue);
+  margin-right: 0.6rem;
+}
+.hero-section .hero-text .hero-links a:last-child {
+  border: 1px solid var(--white);
+}
+
+/* Main section */
+main {
+  width: 70vw;
+  margin: 0 auto;
+}
+/* Why-us-cards section */
+.why-us-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.why-us-cards .card {
+  padding: 1.5rem;
+  margin-top: -4.3rem;
+  margin-right: 1.5rem;
+  /* background-color: var(--white); */
+  /* background-color: white !important; */
+}
+.why-us-cards .card h2 {
+  color: var(--light-gray);
+}
+.why-us-cards .card p {
+  color: var(--light-gray);
+}
+.why-us-cards .card ion-icon {
+  font-size: 48px;
+  color: var(--light-blue);
+}
+.why-us-cards .card h2 {
+  margin-bottom: 0.5rem;
+}
+/* Last card is different */
+.why-us-cards .third-card {
+  margin-right: 0;
+  color: var(--white);
+  background-color: var(--light-blue);
+}
+.why-us-cards .third-card h2 {
+  color: var(--white);
+}
+.why-us-cards .third-card p {
+  color: var(--white);
+}
+.why-us-cards .third-card ion-icon {
+  color: var(--white);
+}
+
+/* Why-us-block section */
+.why-us-block {
+  display: flex;
+  margin: 10rem 0;
+  justify-content: space-between;
+}
+.why-us-block .card {
+  width: auto;
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--light-gray);
+  /* background-color: #23a6f0; */
+  background-color: var(--white);
+}
+.why-us-block .card h3 {
+  margin: 0.5rem;
+}
+.why-us-block .card ion-icon {
+  font-size: 56px;
+  align-items: center;
+  color: var(--light-blue);
+}
+.why-us-block .card h2 {
+  margin: 1rem 0;
+}
+
+/* Industry section */
+.industry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+  /* background-color: #23a6f0; */
+}
+.industry div {
+  width: 55%;
+  text-align: center;
+  color: var(--light-gray);
+}
+.industry div h2 {
+  margin-bottom: 1rem;
+}
+
+/* Testimonies */
+.testimonies {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+.testimonies .testimonial-card {
+  width: 17rem;
+  height: auto;
+  margin: 25px;
+  padding: 2.2rem 0;
+  text-align: center;
+  border: 1px solid rgb(223, 215, 215);
+  border-radius: 5px;
+  /* background-color: white; */
+}
+.testimonies .testimonial-card > img {
+  height: 8rem;
+  width: 8rem;
+}
+.testimonies .testimonial-card p {
+  margin: 1rem;
+  color: var(--light-gray);
+}
+
+/* Styling sponsors section */
+.sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem 0 3rem;
+}
+.sponsors img {
+  margin: 0px 50px;
+  height: auto;
+  width: 5rem;
+  transition: all 0.2s ease-in-out;
+}
+.sponsors img:hover {
+  transform: scale(1.2);
+}
+
+/* Styling the Newsletter */
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  margin-bottom: 7rem;
+  color: var(--white);
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+}
+.newsletter h2 {
+  flex: 1;
+}
+.newsletter form {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  height: 3rem;
+}
+.newsletter form input {
+  border: none;
+}
+.newsletter form input:focus {
+  outline: none;
+}
+.newsletter form input:first-child {
+  width: 20rem;
+  border-radius: 5px 0 0 5px;
+  padding-left: 1rem;
+}
+.newsletter form input:last-child {
+  padding: 0 0.5rem;
+  border-radius: 0 5px 5px 0;
+  color: var(--white);
+  cursor: pointer;
+  background-color: var(--light-blue);
+}
+/*============================================== Pricing======================================================== */
+.pricing {
+  display: flex;
+  /* grid-template-columns: auto auto auto !important; */
+  flex-direction: column;
+  /* justify-content: center; */
+  margin: 0rem;
+  /* background-color: #23a6f0; */
+}
+.pricing .pricing-title {
+  align-self: center;
+  width: 55%;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--light-gray);
+}
+.pricing .pricing-title div h2 {
+  margin-bottom: 1rem;
+}
+/* Pricing plan styling */
+.pricing-plans {
+  display: grid !important;
+  grid-template-columns: auto auto auto !important;
+  height: 35rem;
+  gap: 0px !important;
+  align-items: flex-end;
+  margin-left: 250px;
+  margin-right: 250px;
+  transform: translateX(-55%) !important;
+}
+.pricing-plans .plan {
+  border: 1px solid var(--light-blue);
+  width: 20rem;
+  height: 92%;
+  margin-bottom: 0;
+  padding: 3rem 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--light-gray);
+}
+.pricing-plans .plan .wrapper {
+  width: 90%;
+}
+.wrapper {
+  display: grid;
+}
+/* Upper part of the pricing plan card */
+.pricing-plans .plan .wrapper .upper-part {
+  text-align: center;
+}
+.pricing-plans .plan .wrapper .upper-part h3 {
+  margin-bottom: 2rem;
+}
+.pricing-plans .plan .wrapper .upper-part h5 {
+  font-weight: 800;
+  margin: 0 4.5rem;
+}
+/* Style the standard plan card */
+.pricing-plans .standard-plan {
+  height: 100%;
+  color: var(--white);
+  background-color: var(--light-gray);
+}
+.pricing-plans .plan .wrapper .upper-part .plan-amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.8rem 0;
+  color: var(--light-blue);
+}
+.pricing-plans .plan .wrapper .upper-part .plan-amount p {
+  font-weight: 800;
+  font-size: 1.9rem;
+}
+.pricing-plans .plan .wrapper .upper-part .plan-amount div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+.pricing-plans .plan .wrapper .upper-part .plan-amount div > span {
+  margin-bottom: 0.3rem;
+}
+.pricing-plans .plan .wrapper .upper-part .plan-amount div span:last-child {
+  color: var(--light-blue);
+  opacity: 0.6;
+  font-weight: 500;
+}
+/* feature section of the pricing section */
+.pricing-plans .plan .wrapper .features {
+  display: flex;
+  flex-direction: column;
+}
+.pricing-plans .plan .wrapper .features p {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.pricing-plans .plan .wrapper .features p ion-icon {
+  font-size: 32px;
+  margin-right: 0.3rem;
+  color: rgb(55, 165, 88);
+}
+.pricing-plans .plan .wrapper .features p:nth-child(4) ion-icon,
+.pricing-plans .plan .wrapper .features p:nth-child(5) ion-icon {
+  color: rgb(157, 163, 159);
+}
+/* Try for free section */
+.pricing-plans .plan .free-tier {
+  background-color: var(--light-blue);
+  border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0rem;
+  text-align: center;
+}
+
+/* Styling the Footer */
+footer .wrapper {
+  color: var(--white);
+  height: 40rem;
+  margin-top: 6rem;
+  background-color: var(--light-gray);
+}
+.wrapper .branches {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 4rem;
+}
+.wrapper .branches .branch-description h3 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.wrapper .branches .branch-description p {
+  font-size: 1rem;
+}
+.wrapper .branches .world-map img {
+  height: 10rem;
+  width: auto;
+}
+
+/* Styling form section */
+.appointment {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: 35rem;
+  margin-top: -22%;
+}
+.appointment .appointment-wrapper {
+  background-color: #9c9c9c;
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+}
+.appointment .appointment-wrapper .image-section {
+  width: 30%;
+  height: 100%;
+}
+.appointment .appointment-wrapper .image-section img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.appointment .appointment-wrapper .form-wrapper {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+}
+.appointment .appointment-wrapper .form-wrapper .form-container {
+  width: 85%;
+  margin: 0 auto;
+}
+.appointment .appointment-wrapper .form-wrapper .form-container h4 {
+  width: 100%;
+  text-align: center;
+  margin: 2.5rem;
+  font-size: 1.5rem;
+  color: var(--light-gray);
+}
+.form-container form .form-input {
+  display: flex;
+  flex-direction: column;
+  color: var(--light-gray);
+  margin-bottom: 1rem;
+}
+.form-container form .form-input label {
+  margin-bottom: 0.5rem;
+}
+.form-container form .form-input label ~ input,
+.form-container form .form-input label ~ select {
+  height: 2.7rem;
+  border: 1px solid rgb(214, 214, 214);
+  background-color: rgb(241, 240, 240);
+  border-radius: 3px;
+  color: var(--light-gray);
+  padding-left: 0.6rem;
+}
+.form-container form .form-input label ~ input:focus,
+.form-container form .form-input label ~ select:focus {
+  outline: none;
+}
+.form-container form .submit {
+  height: 2.5rem;
+  width: 100%;
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--white);
+  background-color: var(--light-blue);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Consulting section */
+.consulting {
+  width: 100%;
+  display: flex;
+  margin-top: 10rem;
+  padding: 3rem 0;
+}
+.consulting .content-wrapper {
+  width: 70vw;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.consulting .content-wrapper div h4,
+.consulting .content-wrapper div h4 {
+  color: var(--light-gray);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.consulting .content-wrapper > div + div {
+  height: 3rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  background-color: var(--light-blue);
+  color: var(--white);
+}
+
+/* Footer links section */
+.footer-links {
+  width: 100%;
+  margin-top: 10rem;
+  border: none !important;
+}
+
+/* Grid container */
+.footer-links .footer-links-wrapper {
+  display: grid;
+  width: 70vw;
+  height: auto;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: start;
+  grid-template-columns: auto;
+  grid-template-areas: "company-info legal features resources get-in-touch";
+}
+/* Grid items */
+.footer-links .footer-links-wrapper .company-info {
+  grid-area: company-info;
+}
+.footer-links .footer-links-wrapper .legal {
+  grid-area: legal;
+}
+.footer-links .footer-links-wrapper .features {
+  grid-area: features;
+}
+.footer-links .footer-links-wrapper .resources {
+  grid-area: resources;
+}
+.footer-links .footer-links-wrapper .get-in-touch {
+  grid-area: get-in-touch;
+}
+.footer-links .footer-links-wrapper .get-in-touch p {
+  display: flex;
+  align-items: center;
+}
+.footer-links .footer-links-wrapper .get-in-touch p > ion-icon {
+  font-size: 20px;
+  --ionicon-stroke-width: 48px;
+  color: var(--light-blue);
+  margin-right: 0.5rem;
+}
+
+.footer-links .footer-links-wrapper .card {
+  border: none !important;
+  width: 100%;
+  padding: 0 1rem;
+}
+.footer-links .footer-links-wrapper .card h4 {
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--light-gray);
+}
+.footer-links .footer-links-wrapper .card p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: gray;
+}
+
+/* Copyright section */
+.copyright {
+  width: 100%;
+  margin-top: 3rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+.copyright .copyright-wrapper {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright .copyright-wrapper p {
+  font-size: 0.9rem;
+  color: gray;
+}
+.copyright .copyright-wrapper div ion-icon {
+  margin-right: 0.5rem;
+  font-size: 20px;
+  --ionicon-stroke-width: 48px;
+  color: var(--light-blue);
+}
+
+/* ----------------------------------------------+targeting small screens+----------------------------------------- */
+@media only screen and (max-width: 600px) {
+  body {
+    display: block !important;
+    width: 100% !important;
+  }
+  .account {
+    margin: 0px;
+    display: inline;
+  }
+  .why-us-cards {
+    display: block !important;
+  }
+}
